@@ -18,7 +18,7 @@ class Cliente:
         
         self.es_frecuente = es_frecuente
 
-    def mostrar_info(self):
+    def mostrar_info(self) -> str:
         frecuencia = "Cliente frecuente" if self.es_frecuente else "Cliente ocasional"
         return (
               f" Nombre: {self.nombre}"

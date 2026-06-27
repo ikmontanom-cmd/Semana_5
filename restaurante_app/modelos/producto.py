@@ -17,7 +17,7 @@ class Producto:
         
         self.disponible = disponible
         
-    def mostrar_info(self): 
+    def mostrar_info(self) -> str:
         disponibilidad = "Disponible" if self.disponible else "No disponible"
         return (
             f" Producto: {self.nombre}"

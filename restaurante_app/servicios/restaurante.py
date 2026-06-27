@@ -8,17 +8,17 @@ class Restaurante:
         self.clientes = []
         
         
-    def agregar_plato(self, plato):
+    def agregar_plato(self, plato) -> None:
         self.menu.append(plato)
         
 
-    def mostrar_menu(self):
+    def mostrar_menu(self) -> None:
         for plato in self.menu:
-            print(f"{plato.nombre} - ${plato.precio}")
+            print(plato.mostrar_info())
             
-    def agregar_cliente(self, cliente):
+    def agregar_cliente(self, cliente) -> None:
         self.clientes.append(cliente)  
         
-    def mostrar_clientes(self):
+    def mostrar_clientes(self) -> None:
         for cliente in self.clientes:
-            print(f"{cliente.nombre} - {cliente.correo_electronico}")      
+            print(cliente.mostrar_info())      

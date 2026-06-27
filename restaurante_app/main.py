@@ -23,6 +23,8 @@ def main():
 
 
     print(f"=== {restaurante.nombre} ===\n")
+    print(producto1)
+    print(cliente1)
     print("--- MENÚ ---")
     restaurante.mostrar_menu()
     print("\n--- CLIENTES ---")
